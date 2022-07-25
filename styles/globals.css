@@ -1,0 +1,12 @@
+html{
+  background-color: black;
+  color: white;
+}
+
+.page-container{
+  display: flex;
+  height: 93vh;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+}

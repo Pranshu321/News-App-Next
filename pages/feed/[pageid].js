@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '../../styles/feed.module.css'
-import { useRouter } from 'next/router'
+import useRouter from 'next/router'
 import { Toolbar } from '../../components/toolbar';
 import Head from 'next/head';
 

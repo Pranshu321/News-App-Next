@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '../../styles/feed.module.css'
-import useRouter from 'next/router'
+import {useRouter} from 'next/router'
 import { Toolbar } from '../../components/toolbar';
 import Head from 'next/head';
 
@@ -16,7 +16,7 @@ const pageid = ({pageNumber , articles}) => {
             {articles.map((article,idx)=>(
                 <div key={idx} className={styles.post}>
                  <h1>{article.title}</h1>
-                 <p>{article.description}</p>
+                 <p style={{marginLeft: "25px" , marginRight: "25px"}}>{article.description}</p>
                  {article.urlToImage && <img src={article.urlToImage}  />}
                 </div>
             ))}
